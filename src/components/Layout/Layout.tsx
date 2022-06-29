@@ -1,14 +1,13 @@
 import Head from 'next/head';
-
-import Header from '@components/Header';
-import Footer from '@components/Footer';
-
 import styles from './Layout.module.scss';
+import React from 'react';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
-const Layout = ({ children, className, ...rest }) => {
+const Layout = ({ children, className, ...rest }: { children?: any, className?: string }) => {
   let layoutClassName = styles.layout;
 
-  if ( className ) {
+  if (className) {
     layoutClassName = `${layoutClassName} ${className}`
   }
 
@@ -18,7 +17,7 @@ const Layout = ({ children, className, ...rest }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className={styles.main}>{ children }</main>
+      <main className={styles.main}>{children}</main>
       <Footer />
     </div>
   )
