@@ -1,4 +1,4 @@
-# Space Jelly Gear Starter
+# A Nike IN e-Commerce clone based on NextJS+Typescript
 
 ## ⚡️ Quick Start
 
