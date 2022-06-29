@@ -1,9 +1,12 @@
-import '@styles/globals.scss'
+import '../styles/globals.scss'
 
+import { SnipcartProvider } from 'use-snipcart'
 function MyApp({ Component, pageProps }) {
-  return (
-    <Component {...pageProps} />
-  );
+    return (
+        <SnipcartProvider>
+            <Component {...pageProps} />
+        </SnipcartProvider>
+    )
 }
 
 export default MyApp
