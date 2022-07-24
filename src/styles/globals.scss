@@ -1,6 +1,8 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+// Import Swiper styles
+@import 'swiper/scss';
 
 @font-face {
     font-family: Helvetica_normal;
@@ -27,16 +29,22 @@ body {
 }
 
 h1,
-h2,
-h3 {
+.big_heading {
     font-family: Helvetica_black;
 }
 
-h1 {
+h1,
+.big_heading {
     font-size: 72px;
     line-height: 60px;
     margin-bottom: 8px;
     letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+h2,
+h5 {
+    margin-bottom: 24px;
 }
 
 h2 {
@@ -45,6 +53,18 @@ h2 {
     line-height: 28px;
 }
 
+h4 {
+    font-size: 20px;
+}
+
 section {
     margin: 0 48px;
+}
+
+a:hover {
+    color: $white;
+}
+
+.font-12 {
+    font-size: 12px;
 }

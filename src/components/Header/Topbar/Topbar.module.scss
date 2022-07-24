@@ -1,0 +1,53 @@
+.topbar_container {
+    background-color: $topbarBg;
+
+    span {
+        font-size: 16px;
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .topbar_links_container > div:not(:last-child):after {
+        content: '|';
+        margin: 0 10px;
+    }
+
+    .topbar_links_container > div {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    a:hover {
+        color: $graylink;
+    }
+
+    .topbar_hovermenu_container {
+        min-width: 240px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: opacity 0.2s, visibility 0s linear 0.2s,
+            transform 0.25s ease;
+        border-radius: 0 0 8px 8px;
+        top: 35px;
+        z-index: 2;
+
+        .links_li > a {
+            color: $graylink;
+        }
+
+        .links_li > a:hover {
+            color: $footerBlackBg;
+        }
+    }
+
+    .help_link:hover > .topbar_hovermenu_container {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+}

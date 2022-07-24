@@ -37,6 +37,15 @@
         "resolveJsonModule": true,
         "isolatedModules": true
     },
-    "include": ["/src/pages/"],
-    "exclude": ["node_modules"]
+    "include": ["/src/pages/", "/src/components/"],
+    "exclude": ["node_modules"],
+    "baseUrl": "./",
+    "paths": {
+        "@components/*": ["src/components/*"],
+        "@data/*": ["src/data/*"],
+        "@hooks/*": ["src/hooks/*"],
+        "@lib/*": ["src/lib/*"],
+        "@styles/*": ["src/styles/*"],
+        "@util/*": ["src/util/*"]
+    }
 }

@@ -1,0 +1,8 @@
+.footer_nav_container {
+    font-size: 14px;
+}
+
+.footer_nav_container[data-color='gray'] {
+    color: $graylink;
+    font-size: 12px;
+}
