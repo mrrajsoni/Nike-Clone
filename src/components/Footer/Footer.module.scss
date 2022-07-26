@@ -2,6 +2,10 @@
     color: $white;
     background-color: $footerBlackBg;
 
+    a:hover {
+        color: $white;
+    }
+
     .footer_inner_container {
         max-width: 1440px;
         margin: 0 auto;
