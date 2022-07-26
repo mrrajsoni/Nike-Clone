@@ -1,3 +1,4 @@
+import React from "react"
 import Jordan from "../../../assets/jordan.svg"
 import FooterNav from "../../Commons/FooterNav/FooterNav"
 import styles from "./Topbar.module.scss"

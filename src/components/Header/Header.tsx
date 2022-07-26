@@ -37,12 +37,12 @@ const topmenu = [
     isStatic: true
   }
 ]
-const Header = () => {
+const Header = ({ isSticky }: { isSticky: boolean }) => {
   const { cart = {} } = useSnipcart();
   return (
     <>
       <Topbar />
-      <header className={`${styles.header} px-12 flex items-center relative`}>
+      <header className={`${styles.header} px-12 flex items-center relative ${isSticky ? "sticky" : "static"}`}>
         <Image src={Nikelogo.src} width="65" height="20" alt="Nike-logo" />
         <div className={`flex-grow ${styles.navbar_search_container}`}>
           <nav className={`${styles.topmenu} absolute left-0 right-0`}>

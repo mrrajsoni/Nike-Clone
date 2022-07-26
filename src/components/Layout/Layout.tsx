@@ -16,7 +16,7 @@ const Layout = ({ children, className, ...rest }: { children?: any, className?: 
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      <Header isSticky={true} />
       <main className={styles.main}>{children}</main>
       <Footer />
     </div>
