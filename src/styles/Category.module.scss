@@ -1,0 +1,42 @@
+.category_container {
+    .filter_container {
+        &.hide_filter {
+            margin-left: -260px;
+        }
+        width: 260px;
+        transition: margin-left 500ms ease-out;
+        position: sticky;
+    }
+    .category_header {
+        &.isScrolled {
+            h1 {
+                transform: scale(0.5);
+                transform-origin: left center;
+                transition: transform 200ms;
+            }
+        }
+        h1 {
+            font-size: 24px;
+            transform: scale(1);
+        }
+    }
+
+    .products_container {
+        padding-left: 40px;
+        padding-right: 48px;
+
+        .product_card {
+            cursor: pointer;
+        }
+
+        .product_meta {
+            padding: 12px 0 2px 0;
+            min-height: 185px;
+
+            .product_category_name {
+                color: $graylink;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
