@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import styles from "../styles/Category.module.scss"
 import classNames from "classnames";
+import { sortByMenu } from "../Constants/CategoryConstants";
 
 export interface categoryProductProps {
     id: string,
@@ -60,7 +61,17 @@ const Category = ({ categoryData }: { categoryData: categoryDataProps }) => {
                     </div>
                     <div className="flex gap-7">
                         <div onClick={toggleFilter}>{hideFilters ? "Show Filters" : "Hide Filters"}</div>
-                        <div>Sort By</div>
+                        <div className={`${styles.sortBy_container} relative`}>
+                            Sort By 
+                            <div className={`${styles.dropdown_container} border- bg-white absolute right-0 top-full`}>
+                                <div className={`${styles.dropdown_wrapper} flex flex-col`}>
+                                {sortByMenu.map((menu) =>(
+                                    <button key={menu.displayName}>{menu.displayName}</button>
+                                ))}
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div className={`${styles.category_page_container} flex`}>

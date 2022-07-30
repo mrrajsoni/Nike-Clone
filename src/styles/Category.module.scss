@@ -25,6 +25,28 @@
         h1.isScrolled {
             transform: scale(0.7);
         }
+
+        .sortBy_container{
+            z-index: 2;
+            .dropdown_wrapper{
+
+                padding-bottom: 15px;
+                padding-right: 28px;
+                padding-top: 24px;
+                border-radius: 0px 0px 0px 20px;
+                > button{
+                    text-align: right;
+                    white-space: nowrap;
+                    width: 100%;
+                    display: block;
+                    padding-left: 15px;
+                    line-height: 28px;
+                    padding-left: 24px;
+                }
+            }
+        }
+
+        
     }
 
     .filter_wrapper {
