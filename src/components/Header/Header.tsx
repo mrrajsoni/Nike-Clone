@@ -6,37 +6,10 @@ import Nikelogo from "../../assets/Logo_NIKE.png"
 import Image from "next/image";
 import MegaMenu from "./MegaMenu/MegaMenu";
 import React from "react";
-import { clothingMenu, featuredMenu, shoesMenu } from "../../Constants/MenuConstant";
+import { clothingMenu, featuredMenu, shoesMenu, topmenu } from "../../Constants/MenuConstant";
+import Search from "./Search/Search";
 
-const topmenu = [
 
-  {
-    displayName: "Men",
-    link: "#"
-  },
-  {
-    displayName: "Women",
-    link: "#"
-  },
-  {
-    displayName: "Kids",
-    link: "#"
-  },
-  {
-    displayName: "Customise",
-    link: "#"
-  },
-  {
-    displayName: "Sales",
-    link: "#",
-    isStatic: true
-  },
-  {
-    displayName: "SNKRS",
-    link: "#",
-    isStatic: true
-  }
-]
 const Header = ({ isSticky }: { isSticky: boolean }) => {
   const { cart = {} } = useSnipcart();
   return (
@@ -58,7 +31,7 @@ const Header = ({ isSticky }: { isSticky: boolean }) => {
             </ul>
           </nav>
           <div className={`${styles.search_container} flex items-center absolute right-0`}>
-            <input className={styles.search_input} type="text" placeholder="Search" />
+            <Search />
           </div>
         </div>
 
