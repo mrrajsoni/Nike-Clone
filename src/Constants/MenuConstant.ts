@@ -118,3 +118,33 @@ export const clothingMenu = [
         link: "#"
     },
 ]
+
+export const topmenu = [
+
+    {
+        displayName: "Men",
+        link: "#"
+    },
+    {
+        displayName: "Women",
+        link: "#"
+    },
+    {
+        displayName: "Kids",
+        link: "#"
+    },
+    {
+        displayName: "Customise",
+        link: "#"
+    },
+    {
+        displayName: "Sales",
+        link: "#",
+        isStatic: true
+    },
+    {
+        displayName: "SNKRS",
+        link: "#",
+        isStatic: true
+    }
+]
