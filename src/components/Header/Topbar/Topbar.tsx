@@ -27,7 +27,7 @@ const topbar_hover_menu = [
 
 const Topbar = () => {
     return (
-        <section className={`${styles.topbar_container} flex justify-between items-center h-9 px-12 mx-0 font-12`}>
+        <section className={`${styles.topbar_container} relative z-10 flex justify-between items-center h-9 px-12 mx-0 font-12`}>
             <Jordan />
             <div className={`flex ${styles.topbar_links_container} h-full items-center`}>
                 <div className={`${styles.help_link} relative`}> <a href="#">Help</a>

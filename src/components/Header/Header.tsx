@@ -12,16 +12,28 @@ import Search from "./Search/Search";
 
 const Header = ({ isSticky }: { isSticky: boolean }) => {
   const { cart = {} } = useSnipcart();
-  return (
+
+  const onMouseEnter = () =>{
+  const backdropElement = document.querySelector(".backdropBody") as HTMLElement;
+
+    backdropElement.classList.add(`${styles.isHovered}`)
+  }
+
+  const onMouseLeave = () =>{
+  const backdropElement = document.querySelector(".backdropBody") as HTMLElement;
+
+    backdropElement.classList.remove(`${styles.isHovered}`)
+  }
+  return ( 
     <>
       <Topbar />
       <header className={`${styles.header} px-12 flex items-center relative ${isSticky ? "sticky" : "static"}`}>
         <Image src={Nikelogo.src} width="65" height="20" alt="Nike-logo" />
         <div className={`flex-grow ${styles.navbar_search_container}`}>
           <nav className={`${styles.topmenu} absolute left-0 right-0`}>
-            <ul className="flex justify-center">
+            <ul className="flex">
               {topmenu.map((link) => (
-                <li key={link.displayName} className={`${link.isStatic ? styles.isStatic : styles.isMegaMenu}`}>
+                <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} key={link.displayName} className={`${link.isStatic ? styles.isStatic : styles.isMegaMenu}`}>
                   <a href={link.link}>{link.displayName}</a>
                   {!link.isStatic &&
                     <MegaMenu classes={styles.megamenu_container} featuredMenu={featuredMenu} shoesMenu={shoesMenu} clothingMenu={clothingMenu} shopbySport={[]} shopbyBrand={[]} iconsMenu={[]} />}
@@ -43,6 +55,7 @@ const Header = ({ isSticky }: { isSticky: boolean }) => {
         </button> */}
         </p>
       </header>
+      <div className={`${styles.backdrop_body} backdropBody`}></div>
     </>
 
   );
