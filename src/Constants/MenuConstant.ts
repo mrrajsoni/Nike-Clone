@@ -148,3 +148,49 @@ export const topmenu = [
         isStatic: true
     }
 ]
+
+export const popularTerms = [
+    {
+        displayName: "Air Force 1",
+        link: "#",
+    },
+    {
+        displayName: "Jordan",
+        link: "#",
+    },
+    {
+        displayName: "Air Max",
+        link: "#",
+    },
+    {
+        displayName: "Blazer",
+        link: "#",
+    },
+]
+
+export const topbar_hover_menu = [
+    {
+        displayName: 'Order Status',
+        link: '#',
+    },
+    {
+        displayName: 'Dispatch & Delivery',
+        link: '#',
+    },
+    {
+        displayName: 'Returns',
+        link: '#',
+    },
+    {
+        displayName: 'Contact Us',
+        link: '#',
+    },
+    {
+        displayName: 'Privacy Policy',
+        link: '#',
+    },
+    {
+        displayName: 'Terms of Sale',
+        link: '#',
+    },
+]
