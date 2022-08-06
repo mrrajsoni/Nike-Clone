@@ -1,9 +1,16 @@
 # A Nike IN e-Commerce clone based on NextJS+Typescript
 
-## ⚡️ Quick Start
+This is my attempt to create a Nike Clone to test out how close I can get to the International site level. It's been really fascinating journey so far where I learned about extremely complex layouts, seeing how much I still don't know about CSS. 
 
-```bash
-yarn create next-app -e https://github.com/colbyfayock/space-jelly-gear-starter
-# or
-npx create-next-app -e https://github.com/colbyfayock/space-jelly-gear-starter
-```
+I will try to complete the whole site as soon as possible and keeping it as close to the original as possible.
+
+# Things to do
+- [X] Front page
+- [ ] Product sliders on the homepage
+- [ ] Category page
+- [ ] Product page
+- [ ] Category filters
+- [ ] Mobile responsive
+- [ ] Login
+- [ ] Cart page
+- [ ] Checkout page
