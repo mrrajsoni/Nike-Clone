@@ -1,11 +1,27 @@
-import React from "react";
-import BottomNav, { menuProps } from "../../Commons/BottomNav/BottomNav";
+import React from 'react'
+import BottomNav, { menuProps } from '../../Commons/BottomNav/BottomNav'
 
-const MegaMenu = ({ classes, featuredMenu, shoesMenu, clothingMenu, shopbySport, shopbyBrand, iconsMenu }: { classes: string, featuredMenu: menuProps[], shoesMenu: menuProps[], clothingMenu: menuProps[], shopbySport: menuProps[], shopbyBrand: menuProps[], iconsMenu: menuProps[] }) => {
+const MegaMenu = ({
+    classes,
+    featuredMenu,
+    shoesMenu,
+    clothingMenu,
+    shopbySport,
+    shopbyBrand,
+    iconsMenu,
+}: {
+    classes: string
+    featuredMenu: menuProps[]
+    shoesMenu: menuProps[]
+    clothingMenu: menuProps[]
+    shopbySport: menuProps[]
+    shopbyBrand: menuProps[]
+    iconsMenu: menuProps[]
+}) => {
     return (
-        <div className={`${classes} bg-white flex`}>
+        <div className={`${classes} bg-white flex text-left`}>
             <div>
-                <div >
+                <div>
                     <BottomNav menuLabel="New & Featured" menu={featuredMenu} />
                 </div>
                 <div>
@@ -22,9 +38,8 @@ const MegaMenu = ({ classes, featuredMenu, shoesMenu, clothingMenu, shopbySport,
                     <BottomNav menuLabel="Icons" menu={iconsMenu} />
                 </div>
             </div>
-
         </div>
-    );
-};
+    )
+}
 
-export default MegaMenu;
+export default MegaMenu
