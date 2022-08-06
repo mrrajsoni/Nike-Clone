@@ -150,7 +150,9 @@ const Header = ({ isSticky }: { isSticky: boolean }) => {
                 </p>
             </header>
             <div
-                className={`${styles.backdrop_body} backdropBody fixed inset-0 opacity-0`}
+                className={`${styles.backdrop_body} ${
+                    showSearchContainer ? styles.isHovered : ''
+                } backdropBody fixed inset-0 opacity-0`}
             ></div>
         </>
     )
