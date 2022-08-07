@@ -1,0 +1,37 @@
+.search_box {
+    width: 180px;
+    z-index: 1;
+    float: right;
+    margin: 0;
+    transform: translateX(0);
+    transition: width 0.25s, transform 0.35s;
+    right: 0;
+    padding-top: 10px;
+
+    > svg {
+        height: 22px;
+        width: 22px;
+        position: absolute;
+        left: 10px;
+    }
+
+    .search_input {
+        background-color: $topbarBg;
+        border-radius: 30px;
+        padding: 8px 48px;
+        cursor: text;
+        width: 100%;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    &:global(.isOpen) {
+        transition: width 0.25s ease, transform 0.25s ease;
+        position: relative;
+        transform: translateX(0) translateX(-50vw) translateX(488px);
+        max-width: 656px;
+        width: 656px;
+    }
+}

@@ -1,0 +1,26 @@
+.bottom_nav_container {
+    max-width: 920px;
+    margin: 84px auto 0;
+
+    li {
+        margin-bottom: 12px;
+
+        .gray_nav {
+            color: $graylink;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+    }
+
+    .toggled_nav {
+        transition: all 500ms ease;
+        transform: scaleY(0);
+    }
+
+    .home_bottom_nav {
+        ul:hover > .toggled_nav {
+            transform-origin: left top;
+            transform: scaleY(1);
+        }
+    }
+}
