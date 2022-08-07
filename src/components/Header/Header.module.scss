@@ -22,7 +22,6 @@
         > ul {
             margin: auto;
             width: calc(100% - 690px);
-            overflow: hidden;
             max-width: 1255px;
 
             .megamenu_container {
@@ -160,6 +159,7 @@
             left: 0;
             text-align: right;
             width: 100%;
+            z-index: 6;
 
             .fullSearch_box {
                 > div > div {
