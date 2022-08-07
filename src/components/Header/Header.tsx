@@ -98,7 +98,7 @@ const Header = ({ isSticky }: { isSticky: boolean }) => {
                     </nav>
                     <div className={`block ${styles.fullSearch_container}`}>
                         <div className={styles.fullSearch_box}>
-                            <div className="relative">
+                            <div>
                                 <div className="inline-block w-full">
                                     <Search
                                         classname={searchContainerClass}
